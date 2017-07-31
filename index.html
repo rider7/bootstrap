@@ -2,9 +2,177 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1" /> <!-- Tells page to conform with device size-->
+    <title>Bootstrap Tutorial</title>
+<!-- bootstrap css cdn -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<!-- bootstrap downloaded css file -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+
+
+    <style>
+
+
+    </style>
   </head>
   <body>
+    <!-- Carousel code -->
+    <div id="theCarousel" class="carousel slide" data-ride"carousel">
+      <ol class="carousel-indicators">
 
+        <li data-target="#theCarousel" data-slide-to="0" class="active">
+        </li>
+        <li data-target="#theCarousel" data-slide-to="1">
+        </li>
+        <li data-target="#theCarousel" data-slide-to="2">
+        </li>
+
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="item active">
+
+          <div class="slide1">
+          </div>
+          <div class="carousel-caption">
+            <h1>Amazing Backgrounds</h1>
+            <p>
+              <a href="#" class="btn btn-primary btn-sm">Get them Now</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="item ">
+
+          <div class="slide2">
+          </div>
+          <div class="carousel-caption">
+            <h1>Thousands of Colors</h1>
+            <p>
+              All the colors!
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+
+          <div class="slide3">
+          </div>
+          <div class="carousel-caption">
+            <h1>Dope scenes</h1>
+            <p>
+              Can't believe they are free!
+            </p>
+          </div>
+        </div>
+      </div>
+<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span></a>
+<a class="right carousel-control" href="#theCarousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+
+<div class="container">
+<!-- Table examples -->
+  <div class="row">
+
+    <div class="col-md-6">
+
+      <div class="col-md-6">
+        <table class="table table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <td colspan="4">
+                Best Baseball PLayers
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="col-md-2">
+              </th>
+              <th class="text-center">
+                Average
+              </th>
+              <th class="text-center">
+                RBIs
+              </th>
+              <th class="text-center">
+                Homeruns
+              </th>
+            </tr>
+            <td>
+              <a href="#">Hank Aaron</a>
+            </td>
+            <td>
+              .305
+            </td>
+            <td>
+              2297
+            </td>
+            <td>
+              755
+            </td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Hide data based on screen size -->
+    <div class="container">
+      <div class="well hidden-sm hidden-md hidden-lg">
+        <p>
+          Screen is less than 768px
+        </p>
+      </div>
+        <div class="well hidden-md hidden-lg">
+          <p>
+            Screen is small
+          </p>
+      </div>
+<!-- Basic grid layout -->
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><!-- bootstrap 12 column grid, large screen column take up 3 grid spaces etc. -->
+          <h1>Column 1 </h1>
+          Elen sila lumenn omentilmo, Nae saian luume'. Cormamin lindua ele lle. Saesa omentien lle, vanya sulie Namaarie. Aa' lasser en lle coia orn n' omenta gurtha. Aa' i'sul nora lanne'lle. Aa' menle nauva calen ar' ta hwesta e' ale'quenle. Cormamin niuve tenna' ta elea lle au'. Lissenen ar' maska'lalaith tenna' lye omentuva.
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><!-- bootstrap 12 column grid, large screen column take up 3 grid spaces etc. -->
+          <h1>Column 2 </h1>
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><!-- bootstrap 12 column grid, large screen column take up 3 grid spaces etc. -->
+          <h1>Column 3 </h1>
+          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><!-- bootstrap 12 column grid, large screen column take up 3 grid spaces etc. -->
+          <h1>Column 4 </h1>
+          Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+
+      <!-- Toggle data -->
+      <div class="row">
+
+        <div class="col-lg-2 col-md-2 colsm-4 col-xs-12">
+          <h4><a href="#col1Content" data-toggle="collapse">Column1</a></h4>
+          <div id="col1Content" class="collapse">
+            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+
+    </div>
+
+
+<!-- jquery cdn -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- downloaded bootstrap file -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- bootstrap cdn -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   </body>
 </html>
